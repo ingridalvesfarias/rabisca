@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rabisca — quadro branco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Barra de ferramentas -->
+  <nav class="bar" id="tools" aria-label="Ferramentas">
+    <button data-tool="select" title="Selecionar / mover (V)">➤</button>
+    <button data-tool="rect" title="Retângulo (R)">▭</button>
+    <button data-tool="ellipse" title="Elipse (O)">◯</button>
+    <button data-tool="diamond" title="Losango (D)">◇</button>
+    <button data-tool="line" title="Linha (L)">╱</button>
+    <button data-tool="arrow" title="Seta (A)">→</button>
+    <button data-tool="pencil" title="Lápis (P)">✎</button>
+    <button data-tool="text" title="Texto (T)">T</button>
+    <button data-tool="eraser" title="Borracha (E)">⌫</button>
+  </nav>
+
+  <!-- Painel de propriedades -->
+  <aside class="panel" id="panel">
+    <p>Traço</p>
+    <div class="sw" id="strokes"></div>
+    <p>Fundo</p>
+    <div class="sw" id="fills"></div>
+    <p>Espessura</p>
+    <div class="sw" id="widths"></div>
+    <label class="chk"><input type="checkbox" id="sketchy" checked> Estilo rabisco</label>
+  </aside>
+
+  <!-- Ações -->
+  <div class="bar corner" id="actions">
+    <button id="undo" title="Desfazer (Ctrl+Z)">↶</button>
+    <button id="redo" title="Refazer (Ctrl+Y)">↷</button>
+    <button id="export" title="Exportar PNG">⭳</button>
+    <button id="clear" title="Limpar tudo">🗑</button>
+    <button id="theme" title="Alternar tema">☾</button>
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <script src="app.js"></script>
+</body>
+
+</html>
