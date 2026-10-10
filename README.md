@@ -95,4 +95,4 @@ O `app.js` está organizado na ordem em que as ideias se constroem:
 
 Projeto criado com carinho para estudo. Sinta-se à vontade para expandir as ferramentas, personalizar as cores ou adaptar para outros usos.
 
-Desenvolvido por **INDI.dev** (Ingrid Farias).
+Desenvolvido por **Ingrid Farias**.
